@@ -1,0 +1,115 @@
+:root {
+    --colorePrimario:#250902;
+    --coloreSecondario:#38040E;
+    --coloreAccento:#800E13;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Sofia', cursive;
+}
+
+#navbar {
+    z-index: 9999;
+}
+.header {
+    height: 100vh;
+    background-image: url(./img/bg-1.jpg);
+    background-size: cover;
+    
+}
+.font-25 {
+    font-size: 25px !important;
+}
+.font-50 {
+    font-size: 50px !important;
+}
+.bg-coloreAccento {
+    background-color: var(--coloreAccento);
+}
+.bg-colorePrimario {
+    background-color: var(--colorePrimario);
+}
+.bg-coloreSecondario {
+    background-color: var(--coloreSecondario);
+}
+.over-box {
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.over-img {
+    transition: 1s;
+}
+
+.over-box:hover .over-img {
+    transform: scale(1.1);
+}
+.bg-img2 {
+    background-image: url(./img/bg-2.jpg);
+    background-size: cover;
+}
+
+.h-400 {
+    height: 400px !important;
+}
+
+.bg-color-antico {
+    background-color: #D3C19C;
+}
+.bg-img3 {
+    background-image: url(./img/bg-3.jpg);
+    background-size: cover;
+}
+.bg-img4 {
+    background-image: url(./img/bg-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.h-232 {
+    height: 232px !important;
+}
+
+.border-bottom-costum {
+    border: none !important;
+    border-bottom: 2px solid var(--coloreAssegnato) !important;
+}
+.bg-footer {
+    background-color: #9D7F5D;
+}
+
+.hr{
+    width: 150px;
+    height: 4px;
+    background-color: var(--coloreAccento);
+}
+
+.semi-bold {
+
+    font-weight: 600;
+}
+.text-shadow {
+    text-shadow: 3px 2px 2px rgba(105, 108, 103, 1);
+}
+.animazione {
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes scale {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+@media screen and (max-width:470px) {
+    .font-20 {
+        font-size: 20px !important;
+    }
+}
+
+.border-form {
+    border-radius: 0.25rem;
+}
